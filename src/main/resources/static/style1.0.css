@@ -1,0 +1,239 @@
+.colorOrg{
+	color: #ff9b63;
+}
+.colorBlue{
+	color: #4a98fd;
+}
+.normalBtn{
+	width: 90%;
+	height: 3.75rem;
+	font-size: 1.5rem;
+	color: #fff;
+	/*border-radius: 3.75rem;*/
+	background: #4a98fd;
+	background: -webkit-linear-gradient(left,#73dbff, #4a98fd); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(left,#73dbff, #4a98fd); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(left,#73dbff, #4a98fd); /* Firefox 3.6 - 15 */
+    background: linear-gradient(left,#73dbff, #4a98fd); /* 标准的语法 */
+   	margin-left: 5%;
+   	margin-top: 1rem;
+}
+.normalBtn.gray{
+	background: #3d40fe;
+	filter:alpha(opacity=40);
+	-moz-opacity:0.4;
+	opacity:0.4;
+}
+.normalInput{
+	display: block;
+	height: 1.5rem;
+	background: none;
+	-webkit-box-flex:1 ;
+	-moz-box-flex:1 ;
+}
+.register .File{
+	font-size: 1.1rem;
+    color: #909090;
+    line-height: 1.5rem;
+    position: relative;
+	margin-left: 5%;
+	margin-top: 3rem;
+	padding-left: 2rem;
+}
+.register .File label{
+	position: absolute;
+    top: 0.25rem;
+    left: 0;
+}
+.register .File input{
+	width: 1.25rem;
+    height: 1.25rem;
+    border: 0.083rem solid #4a98fd;
+    position: relative;
+}
+.register .File input:after{
+	display: block;
+    content: "";
+    width: 0.3rem;
+    height: 0.68rem;
+    border-bottom: 0.083rem solid #4a98fd;
+    border-right: 0.083rem solid #4a98fd;
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0.221rem;
+}
+.login .myPhoto,
+.register .myPhoto{
+	width: 8rem;
+	position: relative;
+	left: 50%;
+	margin-left: -4rem;
+	margin-top: 4rem;
+}
+.login .info,
+.register .info{
+	margin-top: 3rem;
+}
+.login .fixed,
+.register .fixed{
+	width: 90%;
+	margin-left: 5%;
+	display: -webkit-box;
+	display: -moz-box;
+	border-bottom: 1px solid #ddd;
+	margin-top: 3rem;
+	height: 3rem;
+}
+.login .fixed img,
+.register .fixed img{
+	width: 1.5rem;
+	margin-right: 1rem;
+}
+.login .toregister,
+.forget .tologin{
+	float: right;
+	font-size: 1.25rem;
+	margin-right: 5%;
+	margin-top: 2rem;
+}
+.login .toforget{
+	float: left;
+	color: #939393;
+	font-size: 1.25rem;
+	margin-left: 5%;
+	margin-top: 2rem;
+}
+.login .normalBtn{
+	margin-top: 3.75rem;
+}
+.register #login{
+	background: #4a98fd;
+	background: -webkit-linear-gradient(left,#fdd07d, #fda065); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(left,#fdd07d, #fda065); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(left,#fdd07d, #fda065); /* Firefox 3.6 - 15 */
+    background: linear-gradient(left,#fdd07d, #fda065); /* 标准的语法 */
+}
+.register .getCode,
+.forget .getCode{
+	width: 6rem;
+	height: 2.2rem;
+	border: 1px solid #4a98fd;
+	border-radius: 3rem;
+	margin-top: -1rem;
+}
+
+.printDetail ul{
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+	border: 1px solid #4A98FD;
+	margin: 1rem 5%;
+	padding: 1rem 0;
+}
+.printDetail .fixed{
+	margin: 0 2rem;
+	height: 3.5rem;
+	line-height: 3.5rem;
+	display: -moz-box;
+	display: -webkit-box;
+}
+.printDetail .fixBig1{
+	height: 3rem;
+	line-height: 3rem;
+}
+.printDetail .fixBig1 h6{
+	font-size: 1.5rem;
+}
+.printDetail .fixed>label{
+	width: 4rem;
+}
+.printDetail .fixed>div{
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	text-align: right;
+    padding-top: 0.5rem;
+}
+.printDetail .fixed .printAmount{
+	width: 3rem;
+	float: right;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+}
+.printDetail .fixed>span{
+	display: block;
+	-moz-box-flex: 1;
+	-webkit-box-flex: 1;
+	text-align: right;
+}
+.printDetail .fixBig2{
+	font-size: 1.35rem;
+}
+.printDetail .changeAmount{
+	width: 2rem;
+	height: 2rem;
+	color: #fff;
+	font-size: 2rem;
+	line-height: 2rem;
+	display: block;
+	float: right;
+	text-align: center;
+	background: #4a98fd;
+}
+.printDetail .alertBox{
+	display: none;
+	z-index: 99;
+    position: absolute;
+    top: 50%;
+    margin-top: -12rem;
+    background: #fff;
+    width: 80%;
+    left: 10%;
+}
+.printDetail .alertBox p{
+	height: 7rem;
+	line-height: 7rem;
+	font-size: 1.1rem;
+}
+.printDetail .alertBox p.selected{
+	background: #73dbff;
+	color: #fff;
+}
+.printDetail .alertBox img{
+	width: 3rem;
+	margin-right: 3rem;
+	margin-left: 2rem;
+}
+.printDetail .alertBox .centi{
+	width: 100%;
+	height: 3.75rem;
+	font-size: 1.25rem;
+	background: #f2f1f1;
+}
+.list ul{
+	width: 100%;
+}
+.list .fixed{
+	width: 92%;
+	height: 3.75rem;
+	line-height: 3.75rem;
+	margin-left: 4%;
+	border-bottom: 1px #DDDDDD solid;
+}
+.list .fileTitle{
+	padding-left: 2rem;
+	overflow: hidden;
+}
+.list .selected{
+	color: #4a98fd;
+}
+.list #cancel{
+	background: #4a98fd;
+	background: -webkit-linear-gradient(left,#fdd07d, #fda065); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(left,#fdd07d, #fda065); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(left,#fdd07d, #fda065); /* Firefox 3.6 - 15 */
+    background: linear-gradient(left,#fdd07d, #fda065); /* 标准的语法 */
+}
