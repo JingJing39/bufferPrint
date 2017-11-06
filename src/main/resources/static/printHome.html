@@ -7,7 +7,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="format-detection" content="telephone=no, email=no" />
 		<meta name="apple-touch-fullscreen" content="yes" />
-		<title>首页</title>
+		<title>上传文件</title>
 		<link rel="stylesheet" href="css/base-wechat.css" />
 		<link rel="stylesheet" href="css/style1.0.css" />
 		<script type="text/javascript" src="https://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js" ></script>
@@ -15,14 +15,41 @@
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
 		<script type="text/javascript" src="js/public.js" ></script>
 	</head>
-	<body ng-controller="home" class="home">
-		<header><label id="userCenter">用户中心</label><label id="printList">历史纪录</label></header>
-		<table>
-			<tr>
-				<td id="upFile">上传文档</td>
-				<td id="recharge">充值</td>
-			</tr>
-		</table>
-		<button id="scanCode">扫码打印</button>
+	<body ng-controller="printDetail" class="printDetail">
+		<ul>
+			<li class="fixed">
+				<h6>海陆天（北方工业大学）</h6>
+				<span>黑白：0.1元／页</span>
+			</li>
+		</ul>
+		<ul>
+			<li class="fixed">
+				<label>份数</label>
+				<div>
+					<span>-</span>
+					<input type="tel" value="1" />
+					<span>+</span>
+				</div>
+			</li>
+			<li class="fixed">
+				<label>单双面</label>
+				<span class="sigOrDoub">单面</span>
+			</li>
+			<li class="fixed">
+				<label>颜色</label>
+				<span class="printColor">黑白</span>
+			</li>
+			<li class="fixed">
+				<label>纸型</label>
+				<span class="PringSize">A4</span>
+			</li>
+		</ul>
+		<ul>
+			<li class="fixed">
+				<label>合计：</label>
+				<span class="printPrice">¥3.00</span>
+			</li>
+		</ul>
+		<button class="normalBtn">确认打印</button>
 	</body>
 </html>

@@ -7,7 +7,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="format-detection" content="telephone=no, email=no" />
 		<meta name="apple-touch-fullscreen" content="yes" />
-		<title>首页</title>
+		<title>待打印文件</title>
 		<link rel="stylesheet" href="css/base-wechat.css" />
 		<link rel="stylesheet" href="css/style1.0.css" />
 		<script type="text/javascript" src="https://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js" ></script>
@@ -15,14 +15,13 @@
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
 		<script type="text/javascript" src="js/public.js" ></script>
 	</head>
-	<body ng-controller="home" class="home">
-		<header><label id="userCenter">用户中心</label><label id="printList">历史纪录</label></header>
-		<table>
-			<tr>
-				<td id="upFile">上传文档</td>
-				<td id="recharge">充值</td>
-			</tr>
-		</table>
-		<button id="scanCode">扫码打印</button>
+	<body ng-controller="listWait" class="list">
+		<ul>
+			<li class="fixed">
+				<p>文件标题</p>
+				<button class="btn_con">打印按钮</button>
+				<button class="btn_con">删除按钮</button>
+			</li>
+		</ul>
 	</body>
 </html>

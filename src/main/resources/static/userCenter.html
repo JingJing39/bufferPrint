@@ -7,22 +7,24 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		<meta name="format-detection" content="telephone=no, email=no" />
 		<meta name="apple-touch-fullscreen" content="yes" />
-		<title>首页</title>
+		<title>个人中心</title>
 		<link rel="stylesheet" href="css/base-wechat.css" />
 		<link rel="stylesheet" href="css/style1.0.css" />
 		<script type="text/javascript" src="https://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js" ></script>
-		<script type="text/javascript" src="js/controllerBfor.js" ></script>
+		<script type="text/javascript" src="js/controllerPay.js" ></script>
 		<script type="text/javascript" src="js/jquery-1.11.0.min.js" ></script>
 		<script type="text/javascript" src="js/public.js" ></script>
 	</head>
-	<body ng-controller="home" class="home">
-		<header><label id="userCenter">用户中心</label><label id="printList">历史纪录</label></header>
-		<table>
-			<tr>
-				<td id="upFile">上传文档</td>
-				<td id="recharge">充值</td>
-			</tr>
-		</table>
-		<button id="scanCode">扫码打印</button>
+	<body ng-controller="userCenter" class="userCenter">
+		<section>
+			 <h6>账户余额</h6>
+			 <p>¥100.00</p>
+			 <ul>
+			 	<li class="fixed" id='recharge'>充值</li>
+			 	<li class="fixed" id="billDetail">消费明细</li>
+			 	<li class="fixed" id="help">帮助中心</li>
+			 	<li class="fixed" id="setting">设置中心</li>
+			 </ul>
+		</section>
 	</body>
 </html>
